@@ -1,0 +1,26 @@
+/*
+ * lora.h
+ *
+ *  Created on: Jun 20, 2020
+ *      Author: Milan Múčka
+ *     Project: Low Energy GPS Tracker Using LoRa Network
+ */
+
+#ifndef INC_LORA_H_
+#define INC_LORA_H_
+
+#include <stdint.h>
+#include "../gps/gps.h"
+
+
+void lora_init();
+void lora_loop();
+void lora_send(GPS_data *gps);
+
+// LoRaWAN keys
+static const uint8_t DEVEUI[8]= { 0x74, 0x43, 0xCB, 0x77, 0x37, 0xC2, 0x2B, 0x00 };
+static const uint8_t APPKEY[16] = { 0x07, 0x6F, 0xED, 0x76, 0x1B, 0xAA, 0xB8, 0x00, 0x60, 0x2D, 0xC5, 0x73, 0xD3, 0x6B, 0xE4, 0x8D };
+static const uint8_t APPEUI[8]= { 0x5A, 0x3F, 0x02, 0xD0, 0x7E, 0xD5, 0xB3, 0x70 };
+
+
+#endif /* INC_LORA_H_ */
