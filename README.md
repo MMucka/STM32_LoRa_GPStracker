@@ -27,3 +27,8 @@ Available options are:
 #define HF_FREQUENCY 	1          --- frequency used for LoRa 868MHz
 #define LF_FREQUENCY 	1          --- frequency used for LoRa 433MHz
 ```
+
+## Other parts
+TTN MQTT Receiver - https://github.com/MMucka/TTN_MQTT_Receiver
+
+WEB Page for User interface - https://github.com/MMucka/TTN_LoRaTracker_MAP
