@@ -2,9 +2,14 @@
 Author: [Milan Múčka](mailto:xmucka02@stud.fit.vutbr.cz)
 Release date: 30.7.2020
 
-STM32Cube application for LoRaWAN tracker
-Using **STM32L051C8T6** Microcontroller for controlling board and **SX1276** for LoRa radio module
+Project was created for Master Thesis on Faculthy of Information Technology in Brno University of Technology.
+It is using LoRaWAN module from Ai-Thinker RHF76-052 with included **STM32L051C8T6** and **SX1276** for LoRa radio module.
+For GPS I was using Neo-M8N, but every NMEA based GPS receiver should work.
+To project is added MPU-6050 Accelerometer for power saving and interrupt control while moving. 
+Also there is OLED display controller SSD1306 for informing about actual status of tracker.
 
+
+This part is STM32Cube application for LoRaWAN tracker.
 
 ## SETTINGS
 Project configuration can be found in **\Core\Inc\system_config.h**
